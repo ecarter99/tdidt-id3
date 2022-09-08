@@ -1,4 +1,6 @@
+from random import random
 import pandas as pd
+from sklearn.datasets import load_iris
 
 from sklearn.preprocessing import LabelEncoder
 from sklearn import tree
@@ -22,4 +24,13 @@ inputs_n = inputs.drop(['TimeToBed','ElapsedWokeUp','NumWokeUp'], axis='columns'
 model = tree.DecisionTreeClassifier()
 model.fit(inputs_n,target)
 
+clf = tree.DecisionTreeClassifier(random_state=0)
+iris = load_iris()
+
+clf.fit(iris.data, iris.target)
+tree.plot_tree(clf)
+
 print('Model Score: ' + str(model.score(inputs_n,target)))
+print(inputs)
+print(model.predict([[0,20,4]]))
+#tree.plot_tree(model)
