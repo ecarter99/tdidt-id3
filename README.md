@@ -1,6 +1,9 @@
 # tdidt-id3
 Decision tree for data modeling, first try using scikit-learn
 
+Overview: 
+This project should be a classification problem. We want to be able to classify whether or not the person is suicidal based on the 'suicide considered' question in the dataset. On the other hand, suicide desire, intention, and resistance could be approached with regression, although they would likely be secondary to the classification problem above.
+
 Sources:
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258535#pone-0258535-g001 
@@ -16,6 +19,9 @@ https://www.youtube.com/watch?v=SW3akc0ho7M
 
 https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
 - Sources on scikit preprocessing for encoding values
+
+https://towardsdatascience.com/model-parameters-and-hyperparameters-in-machine-learning-what-is-the-difference-702d30970f6
+- Considering the numnber of parameters. Page gives outline.
 
 Helps:
 
